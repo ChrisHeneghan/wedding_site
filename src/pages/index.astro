@@ -1,0 +1,262 @@
+---
+import Base from '../layouts/Base.astro';
+
+const hotels = [
+  {
+    name: "DoubleTree by Hilton Downtown South Bend",
+    note: "Official wedding block",
+    link: "https://www.hilton.com/en/attend-my-event/sbnsbdt-907-19f6725c-8d10-47e8-b4f0-15bbeeb8afc7/",
+  },
+  {
+    name: "Aloft South Bend Downtown",
+    note: "Official wedding block",
+    link: "https://app.marriott.com/resview2?id=1787081867041&key=GRP&app=resvlink",
+  },
+  {
+    name: "Fairfield Inn & Suites South Bend",
+    note: "Official wedding block",
+    link: "https://app.marriott.com/resview2?id=1787768771844&key=GRP&app=resvlink",
+  },
+  {
+    name: "Courtyard South Bend at Notre Dame",
+    note: "Official wedding block",
+    link: "https://www.marriott.com/event-reservations/reservation-link.mi?id=1790601191655&key=GRP&app=resvlink",
+  },
+];
+---
+
+<Base title="Morgan & Chris — July 9, 2027">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="header-monogram">M &amp; C</span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Save the Date</p>
+      <h1 class="hero-names">Morgan &amp; Chris</h1>
+      <p class="hero-date">July 9, 2027</p>
+      <p class="hero-location">Notre Dame, Indiana</p>
+      <p class="hero-teaser">Invitation and more details coming soon!</p>
+    </div>
+  </section>
+
+  <!-- Divider ornament -->
+  <div class="ornament" aria-hidden="true">
+    <span class="ornament-line"></span>
+    <span class="ornament-diamond">◆</span>
+    <span class="ornament-line"></span>
+  </div>
+
+  <!-- Hotels -->
+  <section class="hotels" id="hotels">
+    <div class="container">
+      <h2 class="section-heading">Accommodations</h2>
+      <div class="hotel-grid">
+        {hotels.map((hotel) => (
+          <a href={hotel.link} class="hotel-card" target="_blank" rel="noopener noreferrer">
+            <span class="hotel-name">{hotel.name}</span>
+            <span class="hotel-note">{hotel.note}</span>
+            <span class="hotel-cta">Reserve your room →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Morgan &amp; Chris · July 9, 2027 · Notre Dame, Indiana</p>
+    </div>
+  </footer>
+</Base>
+
+<style>
+  /* ─── Header ─── */
+  .site-header {
+    background-color: var(--nd-navy);
+    padding: 1.25rem 0;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-monogram {
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+    color: var(--nd-gold);
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  /* ─── Hero ─── */
+  .hero {
+    background-color: var(--nd-navy);
+    padding: 5rem 0 4.5rem;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--nd-gold);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-names {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-date {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    letter-spacing: 0.12em;
+    color: var(--nd-gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .hero-location {
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-teaser {
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 38ch;
+  }
+
+  /* ─── Ornament ─── */
+  .ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 0;
+    background-color: var(--off-white);
+  }
+
+  .ornament-line {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: var(--nd-gold);
+    opacity: 0.5;
+  }
+
+  .ornament-diamond {
+    font-size: 0.55rem;
+    color: var(--nd-gold);
+    opacity: 0.7;
+  }
+
+  /* ─── Hotels ─── */
+  .hotels {
+    background-color: var(--off-white);
+    padding: 0 0 5rem;
+  }
+
+  .section-heading {
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--nd-navy);
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+  }
+
+  .hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .hotel-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.5rem 1.25rem;
+    border: 1px solid rgba(0, 33, 68, 0.12);
+    border-radius: 2px;
+    background-color: var(--white);
+    color: var(--text-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .hotel-card:hover {
+    border-color: var(--nd-gold);
+    box-shadow: 0 2px 12px rgba(0, 33, 68, 0.08);
+    color: var(--text-dark);
+  }
+
+  .hotel-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--nd-navy);
+    line-height: 1.3;
+  }
+
+  .hotel-note {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--nd-gold);
+  }
+
+  .hotel-cta {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .hotel-card:hover .hotel-cta {
+    color: var(--nd-navy);
+  }
+
+  /* ─── Footer ─── */
+  .site-footer {
+    background-color: var(--nd-navy);
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .site-footer p {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+  }
+</style>

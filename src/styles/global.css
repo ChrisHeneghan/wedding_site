@@ -1,0 +1,53 @@
+:root {
+  --nd-navy: #002144;
+  --nd-gold: #C99700;
+  --nd-gold-light: #e8c44a;
+  --white: #ffffff;
+  --off-white: #faf9f6;
+  --text-dark: #1a1a1a;
+  --text-muted: #5a5a5a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "adobe-garamond-premier-pro", "Adobe Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--nd-navy);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--nd-gold);
+}
+
+/* ─── Utilities ─── */
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+interface Props {
+  title?: string;
+}
+const { title = "Morgan & Chris" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Adobe Fonts — replace with your TypeKit embed URL from fonts.adobe.com -->
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/YOUR_ID.css" /> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

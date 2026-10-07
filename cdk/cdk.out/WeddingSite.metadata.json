@@ -1,0 +1,305 @@
+{
+  "/WeddingSite": [
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/WeddingSite/BucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketName"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:135:5)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/DistributionId": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DistributionId"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:139:5)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/DistributionDomain": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DistributionDomain"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:143:5)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/DeployRoleArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeployRoleArn"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:147:5)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/WeddingSite/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/WeddingSite/SiteBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SiteBucket397A1860"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Bucket2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:24:24)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Certificate/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "Certificate4E7ABB08"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Certificate2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:32:18)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Distribution/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "Distribution830FAC52"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Distribution2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:59:26)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new OpenIdConnectProvider2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:95:28)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new OpenIdConnectProvider2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:95:28)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/DeployRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeployRole885297C3"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Role2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:101:24)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib, node internals...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/WeddingSite/SiteBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SiteBucketPolicy3AC1D0F8"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...aws-cdk-lib...",
+        "(no user code in 10 frames, use --stack-trace-limit to capture more)"
+      ]
+    }
+  ],
+  "/WeddingSite/AuthFn/Fn/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthFnE4A60D44"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new EdgeFunction2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:50:20)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/GithubOidcProvider/Resource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "GithubOidcProviderD8241A88"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new OpenIdConnectProvider2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:95:28)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/DeployRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DeployRoleDefaultPolicyDC930F96"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...PropertyInjectable.<anonymous> in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:118:16)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/WeddingSite/AuthFn/Fn/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthFnServiceRoleCFCEB7EB"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new EdgeFunction2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:50:20)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals..."
+      ]
+    }
+  ],
+  "/WeddingSite/AuthFn/Fn/CurrentVersion/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AuthFnCurrentVersionBB6B64793c58b06af3c61e266549954b81e2bc74"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new EdgeFunction2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:50:20)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals, ts-node..."
+      ]
+    }
+  ],
+  "/WeddingSite/Distribution/Origin1/S3OriginAccessControl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DistributionOrigin1S3OriginAccessControlEB606076"
+    },
+    {
+      "type": "aws:cdk:creationStack",
+      "data": [
+        "...new Distribution2 in aws-cdk-lib...",
+        "new WeddingStack (/Users/christopherheneghan/code/wedding_site/cdk/lib/wedding-stack.ts:59:26)",
+        "<anonymous> (/Users/christopherheneghan/code/wedding_site/cdk/bin/app.ts:26:1)",
+        "...node internals..."
+      ]
+    }
+  ]
+}
